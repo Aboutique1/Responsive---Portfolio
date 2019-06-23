@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body id="contact">
+    <div class="navContainer mainHeader">
+            <nav class="navContent">
+                <a class="yourName" href="index.html">
+                    <p class="yourNameText">
+                        Amber Webb
+                    </p>
+                </a>
+
+                <ul class="navButtons">
+                    <li class="navButton">
+                        <a class="navButton" href="index.html">
+                        About
+                        </a>
+                    </li>
+                    <li class="navButtonExclude">
+                        |
+                    </li>
+                    <li class="navButton">
+                        <a class="navButton" href="portfolio.html">
+                        Portfolio
+                        </a>
+                    </li>
+                    <li class="navButtonExclude">
+                        |
+                    </li>
+                    <li class="navButton">
+                        <a class="navButton" id="contactnav" href="#">
+                        Contact
+                        </a>
+                    </li>
+                    
+                </ul>
+                </nav>
+
+    </div>
+    <main class="mainContent mainContentBackground mainContentBorder">
+        <p class="bigContentText">
+            Contact
+       </p>
+       <div class="horizontalLine"></div>
+
+        <form onsubmit="submitted()">
+            <label class="contactLabel" for="name">Name</label><br>
+            <input id="name" class="nameAndEmailInput" /><br><br>
+            <label class="contactLabel" for="email">Email</label><br>
+            <input id="email" class="nameAndEmailInput" /><br><br>
+            <label class="contactLabel" for="message">Message</label><br>
+            <textarea id="message" class="nameAndEmailInput"  ></textarea><br>
+            <input id="submitButton" class=""  type="submit" value="Submit" />
+        </form>
+
+       
+    
+    </main>
+    <footer class="footer mainFooterBackground mainFooterBorder">
+        <p class="copyRight">
+           Copyright &copy;
+       </p>
+    </footer>
+    
+
+
+    <script>
+function getPlatformType() {
+	if(navigator.userAgent.match(/mobile/i)) {
+		return 'Mobile Phone';
+	} else if (navigator.userAgent.match(/iPad|Android|Touch/i)) {
+		return 'Tablet';
+	} else {
+		return 'Desktop Computer';
+	}
+}
+
+   function submitted() {
+    button = document.getElementById('submitButton')
+    button.addEventListener('click', function (event) {
+    button.classList.toggle('button-active')
+  }) 
+  alert(`Your ${getPlatformType()} is infected with a virus!`);
+}
+    </script>
+</body>
+</html>
