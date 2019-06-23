@@ -429,6 +429,7 @@ input[type=checkbox]:checked + label { background-color: white; }
 
 
 
+
 }
   
   
@@ -437,7 +438,6 @@ input[type=checkbox]:checked + label { background-color: white; }
     .titleButton{
         text-decoration: none;
         overflow: hidden;
-        border:3px solid black;
         width:100%;
         position: relative;
         color:rgb(255, 255, 255);
@@ -446,12 +446,7 @@ input[type=checkbox]:checked + label { background-color: white; }
         -webkit-transition: all .8s ease-in-out;
         transition: all .8s ease-in-out;
         }
-        #fixRutgersButton{
-            bottom:200px;
-            margin:0 auto;
-            position: relative;
-            border:20px solid blue;
-        }
+       
         
         .titleButton:hover{
             color:rgb(25, 39, 186);
